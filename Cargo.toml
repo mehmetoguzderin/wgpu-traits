@@ -1,0 +1,20 @@
+[package]
+name = "wgpu-traits"
+description = "Write WebGPU code in record time!"
+version = "0.0.0"
+authors = ["Mehmet Oguz Derin <mehmetoguzderin@mehmetoguzderin.com>"]
+edition = "2018"
+license = "MIT"
+repository = "https://github.com/mehmetoguzderin/wgpu-traits"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+gltf = { version = "0.14.0", features = ["extras", "names"] }
+image = "0.22.3"
+proc-macro2 = "1.0"
+reqwest = { version = "0.10.1", features = ["blocking", "json"] }
+quote = "1.0.2"
+syn = "1.0.13"
+url = "2.1.1"
